@@ -1,0 +1,166 @@
+//Coleção objeto
+db.objeto.insertMany([
+{
+	_id: 'obj1',
+	cod_objeto: 1,
+	peso: 5,
+	dimensao: 10,
+},
+{
+	_id: 'obj2',
+	cod_objeto: 2,
+	peso: 7.5,
+	dimensao: 15,
+},
+{
+	_id: 'obj3',
+	cod_objeto: 3,
+	peso: 11,
+	dimensao: 12,
+},
+{
+	_id: 'obj4',
+	cod_objeto: 4,
+	peso: 5.75,
+	dimensao: 10.5,
+},
+{
+	_id: 'obj5',
+	cod_objeto: 5,
+	peso: 20,
+	dimensao: 20,
+}])
+
+//Coleção funcionario
+db.funcionario.insertMany([
+{
+	_id: 'func1',
+	CPF: 11111,
+	CPF_Chefe: 11111,
+	nome: 'Silva de Fulano',
+	idade: 25,
+	sexo: 'M'
+},
+{
+	_id: 'func2',
+	CPF: 22222,
+	CPF_Chefe: 22222,
+	nome: 'Cicrana Fulano',
+	idade: 20,
+	sexo: 'F'
+},
+{
+	_id: 'func3',
+	CPF: 33333,
+	CPF_Chefe: 33333,
+	nome: 'Tal de Maria',
+	idade: 32,
+	sexo: 'F'
+},
+{
+	_id: 'func4',
+	CPF: 44444,
+	CPF_Chefe: 11111,
+	nome: 'Henrique Jose',
+	idade: 67,
+	sexo: 'M'
+},
+{
+	_id: 'func5',
+	CPF: 55555,
+	CPF_Chefe: 22222,
+	nome: 'Fernandes Claudio',
+	idade: 40,
+	sexo: 'M'
+}])
+
+//Coleção cliente
+db.cliente.insertMany([
+{
+	_id: 'cli1',
+	cod_cliente: 1,
+	nome: 'Fulano da Silva',
+	endereco:
+	{
+	CEP: 11111111,
+	descricao: 'Lorem ipsum dolor sit amet, consectetur'
+	}
+},
+{
+	_id: 'cli2',
+	cod_cliente: 2,
+	nome: 'Fulano Cicrano',
+	endereco:
+	{
+	CEP: 22222222,
+	descricao: 'Sed do eiusmod tempor incididunt ut'
+	}
+},
+{
+	_id: 'cli3',
+	cod_cliente: 3,
+	nome: 'Maria de Tal',
+	endereco:
+	{
+	CEP: 33333333,
+	descricao: 'Ut enim ad minim veniam'
+	}
+},
+{
+	_id: 'cli4',
+	cod_cliente: 4,
+	nome: 'José Henrique',
+	endereco:
+	{
+	CEP: 44444444,
+	descricao: 'Quis nostrud exercitation ullamco'
+	}
+},
+{
+	_id: 'cli5',
+	cod_cliente: 5,
+	nome: 'Cláudio Fernandes',
+	endereco:
+	{
+	CEP: 55555555,
+	descricao: 'Duis aute irure dolor in reprehenderit'
+	}
+}])
+
+//Coleção entrega
+db.entrega.insertMany([
+{
+	objeto_id: 'obj1',
+	cliente_id: 'cli1',
+	funcionario_id: 'func1',
+	dt_entrega: ISODate("1980-02-12"),
+	destinatario: 'Fulano da Silva'
+},
+{
+	objeto_id: 'obj2',
+	cliente_id: 'cli2',
+	funcionario_id: 'func2',
+	dt_entrega: ISODate("1980-02-12"),
+	destinatario: 'Fulano Cicrano'
+},
+{
+	objeto_id: 'obj3',
+	cliente_id: 'cli3',
+	funcionario_id: 'func3',
+	dt_entrega: ISODate("1980-02-12"),
+	destinatario: 'Fulano da Silva'
+},
+{
+	objeto_id: 'obj4',
+	cliente_id: 'cli4',
+	funcionario_id: 'func4',
+	dt_entrega: ISODate("1980-02-12"),
+	destinatario: 'Fulano da Silva'
+},
+{
+	objeto_id: 'obj5',
+	cliente_id: 'cli5',
+	funcionario_id: 'func5',
+	dt_entrega: ISODate("1980-02-12"),
+	destinatario: 'Fulano da Silva'
+}])

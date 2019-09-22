@@ -1,0 +1,11 @@
+Numa transportadora de volumes, os objetos têm peso, dimensão e código do objeto. Cada objeto pode ser entregue a no máximo um cliente e deve ser transportado por no máximo um funcionário.
+
+Cada funcionário da transportadora tem nome, cpf, sexo e idade e pode ter um dependente associado a ele. Cada dependente tem nome, idade e parentesto. Todo funcionário tem a possibilidade de ser promovido a chefe. Um empregado pode ter apenas um chefe e um chefe pode chefiar vários empregados.
+
+A transportadora possui vários departamentos, cada um tem número de funcionários, descrição e código. Cada funcionário pode trabalhar em vários departamentos e cada departamento pode receber vários funcionários.
+
+O funcionário que trabalha em algum departamente tem a possibilidade de receber uma bonificação que, por sua vez, possui código, data e valor.
+
+Todo cliente da transportadora pode ser pessoa física ou jurídica e possui nome, endereço(descrição e CEP) e telefone, podendo fazer "n" pedidos à transportadora. Caso seja pessoa física, o cliente também possui CPF e caso seja pessoa jurídica, o cliente possui CNPJ. Cada pedido tem o seu destinatário e a data de entrega do mesmo.
+
+No ato da entrega são necessários,obrigatoriamente, Cliente, Funcionário e Objeto.
